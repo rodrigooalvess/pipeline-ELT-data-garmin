@@ -14,4 +14,6 @@ def normalize_columns(col):
 
 df_col_normalized = df.copy()
 df_col_normalized.columns = [normalize_columns(col) for col in df.columns]
+df_col_normalized.dropna(axis=1, how="all")
+
 print(df_col_normalized)
