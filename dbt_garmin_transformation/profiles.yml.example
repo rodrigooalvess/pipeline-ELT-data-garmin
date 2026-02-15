@@ -1,0 +1,12 @@
+dbt_garmin_transformation:
+  outputs:
+    dev:
+      dbname: NOME_DO_BANCO
+      host: SEU_HOST_AQUI
+      pass: 'SUA_SENHA_AQUI'
+      port: SUA_PORTA_AQUI
+      schema: SCHEMA AQUI 
+      threads: 1
+      type: SEU_BANCO_AQUI
+      user: SEU_USUARIO_AQUI
+  target: dev

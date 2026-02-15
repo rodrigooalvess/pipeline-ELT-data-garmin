@@ -1,0 +1,17 @@
+name: 'dbt_garmin_transformation'
+version: '1.0.0'
+
+profile: 'dbt_garmin_transformation'
+
+model-paths: ["models"]
+
+clean-targets:         
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_garmin_transformation: 
+    staging:
+      +materialized: view    
+    marts:
+      +materialized: table   

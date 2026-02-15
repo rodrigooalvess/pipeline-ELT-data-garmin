@@ -218,3 +218,9 @@ __marimo__/
 #arquivos processados
 
 data/processed/*.csv
+
+#dbt 
+
+target/
+dbt_packages/
+logs/

@@ -25,7 +25,7 @@ def data_ingestion():
 
                 def normalize_columns(col):
                     col = col.lower().strip()
-                    col = unicodedata.normalize("NFKC", col).encode("ascii", "ignore").decode("utf-8")
+                    col = unicodedata.normalize("NFD", col).encode("ascii", "ignore").decode("utf-8")
                     col = col.replace(" ", "_").replace(":", "")
 
                     return col
