@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_treinos_semanais
+    description: "Tabela agregada com o resumo de cada treino realizado."
+    columns:
+      - name: id_treino
+        description: "Chave única baseada no nome do arquivo original."
+        tests:
+          - unique    # Nao pode duplicatas aqui!
+          - not_null  # Não pode estar vazio
+      
+      - name: distancia_total_km
+        description: "Distância total percorrida no treino."
+        tests:
+          - not_null

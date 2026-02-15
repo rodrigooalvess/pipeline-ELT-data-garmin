@@ -37,9 +37,11 @@ def data_ingestion():
                 df_col_normalized["file_source"] = file_name
                 df_col_normalized["ingested_at"] = datetime.now()
 
+                df_col_normalized.drop(df_col_normalized[df_col_normalized["intervalo"] == "Resumo"].index, inplace=True)
+
                 engine = get_engine()
 
-                df_col_normalized.to_sql(name="garmin_activities", con=engine, schema="raw_bronze", if_exists="append", index=False)
+                df_col_normalized.to_sql(name="garmin_activities", con=engine, schema="raw", if_exists="append", index=False)
 
                 shutil.move(file_name_path, processed_path)
                 print(f"Arquivo: {file_name_path} processado e movido para {file_name_path_processed}")

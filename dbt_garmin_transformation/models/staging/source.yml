@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: garmin_raw        # apelido pra facilitar {{ source("apelido", "nome_tabela") }} 
-    schema: raw_bronze             # O schema da tabela raw
+    schema: raw             # O schema da tabela raw
     tables:
       - name: garmin_activities 
         description: "Tabela com os dados brutos vindos dos CSVs do Garmin via Python"
