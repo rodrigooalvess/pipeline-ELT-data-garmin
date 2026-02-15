@@ -46,9 +46,11 @@ def data_ingestion():
                 shutil.move(file_name_path, processed_path)
                 print(f"Arquivo: {file_name_path} processado e movido para {file_name_path_processed}")
 
+                return True
+
             except Exception as erro:
 
                 print(f"Erro ao processar {file_name}: {erro}")
     else:
-
         print("Nenhum Arquivo Novo Para Processar!")
+        return  
