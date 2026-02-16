@@ -1,6 +1,6 @@
 # 🏃‍♂️ Garmin Data Pipeline: De Dados Brutos a Insights de Performance
 
-Este projeto é uma solução completa de **ELT (Extract, Load, Transform)** projetada para automatizar a ingestão e análise de dados de atividades físicas exportadas do Garmin. O pipeline transforma arquivos CSV brutos em uma camada analítica pronta para BI, utilizando as melhores práticas de Engenharia de Dados.
+Este projeto é uma solução completa de **ELT (Extract, Load, Transform)** projetada para automatizar a ingestão e análise de dados de atividades físicas exportadas do Garmin. O pipeline transforma arquivos CSV brutos em uma camada analítica pronta para BI, utilizando as boas práticas de Engenharia de Dados.
 
 
 
