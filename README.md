@@ -39,3 +39,12 @@ CREATE DATABASE garmin_db;
 -- Conecte ao banco e crie os schemas
 CREATE SCHEMA raw;
 CREATE SCHEMA analytics;
+```
+
+### 3. Execução do Pipeline
+Para processar os dados, insira seus arquivos `.csv` na pasta `data/landing` e execute o comando:
+
+> **Dica:** Já deixei um arquivo de exemplo dentro da pasta `data/landing` para que você possa testar o pipeline imediatamente! 🚀
+
+```bash
+poetry run python main.py
