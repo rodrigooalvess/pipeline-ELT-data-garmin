@@ -1,9 +1,9 @@
 dbt_garmin_transformation:
   outputs:
     dev:
-      dbname: seu_database
+      dbname: 
       host: localhost
-      pass: 'sua_senha_postgres'
+      pass: ''
       port: 5432
       schema: analytics
       threads: 1

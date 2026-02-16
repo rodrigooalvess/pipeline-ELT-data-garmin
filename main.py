@@ -11,7 +11,7 @@ def run_ingestion():
 @task(name="Transformações do DBT")
 def run_dtb():
     print("Iniciando DBT Run...")
-    result = subprocess.run(["dbt", "run"], cwd="dbt_garmin_transformation", check=True)
+    result = subprocess.run(["dbt", "run", "--profiles-dir", ".."], cwd="dbt_garmin_transformation", check=True)
     return result
 
 @flow(name="Garmin ELT Pipeline")
