@@ -60,14 +60,19 @@ Este projeto está em desenvolvimento contínuo. As próximas etapas planejadas 
 - [ ] Conectar a tabela `fct_treinos_diarios` ao **Power BI**.
 - [ ] Criar dashboards de performance com KPIs de Pace Médio, Volume Semanal e Zonas de Frequência Cardíaca.
 
-### 🟡 Fase 2: Infraestrutura e Nuvem
+### 🟣 Fase 2: Inteligência Artificial e Feedback Automático (Novo!)
+- [ ] Agente de IA para Performance: Implementar integração com LLMs (via OpenAI API ou LangChain) para analisar os treinos e gerar feedbacks personalizados (ex: "Seu pace médio melhorou, mas sua FC subiu; considere um treino regenerativo").
+- [ ] Análise Preditiva (ML): Desenvolver modelos de Machine Learning para prever o tempo estimado de conclusão para distâncias específicas (5k, 10k, 21k) com base no histórico de treinos.
+- [ ] Detecção de Anomalias: Usar ML para identificar treinos com métricas fora do padrão que possam indicar fadiga ou risco de lesão.
+
+### 🟡 Fase 3: Infraestrutura e Nuvem
 - [ ] Migrar o banco de dados local para uma instância gerenciada na **Cloud (GCP ou AWS)**.
 - [ ] Implementar o armazenamento de arquivos brutos em Buckets (S3/GCS) para simular um Data Lake real.
 - [ ] Containerizar a aplicação utilizando **Docker** para facilitar o deploy.
 
-### 🟠 Fase 3: Orquestração Avançada
+### 🟠 Fase 4: Orquestração Avançada
 - [ ] Avaliar a migração do Prefect para o **Apache Airflow** para gerenciar fluxos de dados mais complexos.
 - [ ] Implementar monitoramento de **Data Quality** mais rigoroso com a biblioteca **Great Expectations**.
 
-### 🔵 Fase 4: Interface do Usuário (SaaS)
-- [ ] Desenvolver uma Web App para que outros usuários possam realizar o upload de seus CSVs e visualizar relatórios instantâneos.
+### 🔵 Fase 5: Interface do Usuário (SaaS)
+- [ ] Desenvolver uma Web App para que outros usuários possam realizar o upload de seus CSVs e visualizar relatórios e feedbacks da IA instantaneamente.
