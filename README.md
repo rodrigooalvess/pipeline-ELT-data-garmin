@@ -48,3 +48,24 @@ Para processar os dados, insira seus arquivos `.csv` na pasta `data/landing` e e
 
 ```bash
 poetry run python main.py
+```
+
+## 🗺️ Roadmap de Evolução
+
+Este projeto está em desenvolvimento contínuo. As próximas etapas planejadas para a evolução da arquitetura são:
+
+### 🟢 Fase 1: Visualização e BI (Em breve)
+- [ ] Conectar a tabela `fct_treinos_diarios` ao **Power BI**.
+- [ ] Criar dashboards de performance com KPIs de Pace Médio, Volume Semanal e Zonas de Frequência Cardíaca.
+
+### 🟡 Fase 2: Infraestrutura e Nuvem
+- [ ] Migrar o banco de dados local para uma instância gerenciada na **Cloud (GCP ou AWS)**.
+- [ ] Implementar o armazenamento de arquivos brutos em Buckets (S3/GCS) para simular um Data Lake real.
+- [ ] Containerizar a aplicação utilizando **Docker** para facilitar o deploy.
+
+### 🟠 Fase 3: Orquestração Avançada
+- [ ] Avaliar a migração do Prefect para o **Apache Airflow** para gerenciar fluxos de dados mais complexos.
+- [ ] Implementar monitoramento de **Data Quality** mais rigoroso com a biblioteca **Great Expectations**.
+
+### 🔵 Fase 4: Interface do Usuário (SaaS)
+- [ ] Desenvolver uma Web App para que outros usuários possam realizar o upload de seus CSVs e visualizar relatórios instantâneos.
