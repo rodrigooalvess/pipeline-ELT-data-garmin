@@ -60,10 +60,10 @@ Este projeto está em desenvolvimento contínuo. As próximas etapas planejadas 
 - [ ] Conectar a tabela `fct_treinos_diarios` ao **Power BI**.
 - [ ] Criar dashboards de performance com KPIs de Pace Médio, Volume Semanal e Zonas de Frequência Cardíaca.
 
-### 🟣 Fase 2: Inteligência Artificial e Feedback Automático (Novo!)
-- [ ] Agente de IA para Performance: Implementar integração com LLMs (via OpenAI API ou LangChain) para analisar os treinos e gerar feedbacks personalizados (ex: "Seu pace médio melhorou, mas sua FC subiu; considere um treino regenerativo").
-- [ ] Análise Preditiva (ML): Desenvolver modelos de Machine Learning para prever o tempo estimado de conclusão para distâncias específicas (5k, 10k, 21k) com base no histórico de treinos.
-- [ ] Detecção de Anomalias: Usar ML para identificar treinos com métricas fora do padrão que possam indicar fadiga ou risco de lesão.
+### 🟣 Fase 2: Inteligência Artificial e Feedback Automático 
+- [ ] Implementar integração com LLMs para analisar os treinos e gerar feedbacks personalizados.
+- [ ] Desenvolver modelos de Machine Learning para prever o tempo estimado de conclusão para distâncias específicas com base no histórico de treinos.
+- [ ] Usar ML para identificar treinos com métricas fora do padrão que possam indicar fadiga ou risco de lesão.
 
 ### 🟡 Fase 3: Infraestrutura e Nuvem
 - [ ] Migrar o banco de dados local para uma instância gerenciada na **Cloud (GCP ou AWS)**.
