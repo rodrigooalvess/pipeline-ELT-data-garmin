@@ -50,6 +50,8 @@ Para processar os dados, insira seus arquivos `.csv` na pasta `data/landing` e e
 poetry run python main.py
 ```
 
+---
+
 ## 🗺️ Roadmap de Evolução
 
 Este projeto está em desenvolvimento contínuo. As próximas etapas planejadas para a evolução da arquitetura são:
